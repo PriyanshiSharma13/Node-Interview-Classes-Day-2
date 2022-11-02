@@ -1,0 +1,29 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    width: 90%;
+    margin-left: 2%;
+    margin-bottom: 20px;
+    border-radius: 20px;
+    background-color: black;
+}
+h1{
+    color: red;
+}
+h2{
+    color: aquamarine;
+}
+p{
+    font-size: 1.2rem;
+    color: antiquewhite;
+}
+li{
+    color: yellow;
+    margin-left: 5%;
+}
+hr{
+    height: 2px;
+    background-color: yellowgreen;
+}

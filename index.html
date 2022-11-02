@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Node-Interview-Classes-Day-2</title>
+</head>
+<body>
+    <div class="box">
+        <h1>Node-Interview-Classes-Day-2</h1><br><br>
+        <h2>Q1.  What are the different types of HTTP requests?</h2>
+        <p><ol>
+            <li>GET - to receive the data from server</li>
+            <li>POST - to update the data, add security</li>
+            <li>PUT - to modify the data</li>
+            <li>DELETE - to delete the data from server</li>
+            <li>PATCH - to modify only the updated data</li>
+        </ol></p><br><br>
+        <hr>
+        <h2>Q2. Explain the concept of middleware in Node.js.</h2>
+        <p>The middleware in node.js is a function that will have all the access for requesting an object, responding to an object, and moving to the next middleware function in the application request-response cycle. This function can be used for modifying the req and res objects for tasks like adding response headers, parsing requesting bodies, and so on.</p><br><br>
+        <hr>
+        <h2>Q3. Explain CORS</h2>
+        <p>CORS stands for Cross-Origin Resource Sharing</p>
+        <ol>
+            <li>It is an HTTP-header based mechanism that allows a server to indicate any origins (domain, scheme, or port) other than its own from which a browser should permit loading resources</li>
+            <li>CORS also relies on a mechanism by which browsers make a "preflight" request to the server hosting the cross-origin resource, in order to check that the server will permit the actual request.</li>
+            <li>CORS also relies on a mechanism by which browsers make a "preflight" request to the server hosting the cross-origin resource, in order to check that the server will permit the actual request.</li>
+            <li>The CORS mechanism supports secure cross-origin requests and data transfers between browsers and servers.</li>
+            <li>Modern browsers use CORS in APIs such as XMLHttpRequest or Fetch to mitigate the risks of cross-origin HTTP requests.</li>
+        </ol><br><br>
+        <hr>
+        <h2>Q4. What is Express. how it helps you to create a backend application</h2>
+        <p>Express. js is the backend part of MEAN and manages routing, sessions, HTTP requests, error handling, etc. The JavaScript library of Express. js helps the programmers to build efficient and fast web apps.</p>
+        <p>Features of Express.js -</p>
+        <ol>
+            <li>Faster Server side development</li>
+            <li>Middleware</li>
+            <li>Routing</li>
+            <li>Templating</li>
+            <li>Debugging</li>
+        </ol><br><br>
+        <hr>
+        <h2>Q5. Explain min 5 status codes gets used in Backend development</h2>
+        <p>Status codes in http requests -</p>
+        <ol>
+            <li>200: “Everything is OK.” This is the code that is delivered when a web page or resource acts exactly the way it’s expected to.</li>
+            <li>204: “No Content.” This code means that the server has successfully processed the request, but is not going to return any content.</li>
+            <li>301: “The requested resource has been moved permanently.” This code is delivered when a web page or resource has been permanently replaced with a different resource. It is used for permanent URL redirection.</li>
+            <li>307: “Temporary Redirect.” This status code has replaced 302 “Found” as the appropriate action when a resource has been temporarily moved to a different URL. Unlike the 302 status code, it does not allow the HTTP method to change.</li>
+            <li>400: “Bad Request.” The server can’t return a response due to an error on the client’s end. See our guide for resolving this error.</li>
+            <li>404: “The requested resource was not found.” This is the most common error message of them all. This code means that the requested resource does not exist, and the server does not know if it ever existed.</li>
+            <li>502: “Bad Gateway.” This error code typically means that one server has received an invalid response from another, such as when a proxy server is in use. Other times a query or request will take too long, and so it is canceled or killed by the server and the connection to the database breaks.</li>
+        </ol><br><br>
+        <hr>
+        <h2>Q6. Difference between HTTP and HTTPS</h2>
+        <p>HTTPS is HTTP with encryption and verification. The only difference between the two protocols is that HTTPS uses TLS (SSL) to encrypt normal HTTP requests and responses, and to digitally sign those requests and responses. As a result, HTTPS is far more secure than HTTP. A website that uses HTTP has http:// in its URL, while a website that uses HTTPS has https://</p>
+        <p>HTTP stands for Hypertext Transfer Protocol, and it is a protocol – or a prescribed order and syntax for presenting information – used for transferring data over a network. Most information that is sent over the Internet, including website content and API calls, uses the HTTP protocol. There are two main kinds of HTTP messages: requests and responses.</p>
+        <p>The S in HTTPS stands for "secure." HTTPS uses TLS (or SSL) to encrypt HTTP requests and responses, so in the example above, instead of the text, an attacker would see a bunch of seemingly random characters.</p>
+        <ol>
+            <li>HTTPS is slow,HTTP is fast</li>
+            <li>HTTPS is more secured,HTTP is less secured</li>
+        </ol><br><br>
+        <hr>
+        <h2>Q7. What are JWT tokens?</h2>
+        <p>JWTs or JSON Web Tokens are most commonly used to identify an authenticated user. They are issued by an authentication server and are consumed by the client-server (to secure its APIs).</p>
+        <p>JSON Web Token is an open industry standard used to share information between two entities, usually a client (like your app’s frontend) and a server (your app’s backend).</p>
+        <ol>
+            <li>They contain JSON objects which have the information that needs to be shared. Each JWT is also signed using cryptography (hashing) to ensure that the JSON contents (also known as JWT claims) cannot be altered by the client or a malicious party.</li>
+            <li>For example, when you sign in with Google, Google issues a JWT which contains the following claims / JSON payload</li>
+        </ol>
+        <hr>
+    </div>
+</body>
+</html>
